@@ -1,0 +1,32 @@
+name: Repository Structure Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-activity-5:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required Activity 5 files and folders
+        shell: bash
+        run: |
+          set -e
+          test -f README.md
+          test -f .gitignore
+          test -d frontend
+          test -d backend
+          test -d ai-service
+          test -d database
+          test -d docs
+          test -f docs/tech-stack-summary.md
+          test -f docs/technology-comparison.md
+          test -f docs/decision-matrix.md
+          test -f docs/architecture.md
+          test -f docs/ADR-001.md
+          test -f docs/fitflow-architecture.svg
+          echo "Activity 5 repository structure is complete."

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+  </marker>
+  <style>
+    .box { fill:#ffffff; stroke:#333333; stroke-width:2; rx:12; ry:12; }
+    .title { font: bold 28px Arial, sans-serif; fill:#111; }
+    .label { font: 18px Arial, sans-serif; fill:#111; }
+    .small { font: 15px Arial, sans-serif; fill:#333; }
+    .line { stroke:#333; stroke-width:2; fill:none; marker-end:url(#arrow); }
+  </style>
+</defs>
+
+<text x="700" y="42" text-anchor="middle" class="title">FitFlow High-Level System Architecture</text>
+
+<rect class="box" x="550" y="70" width="300" height="70"/>
+<text x="700" y="112" text-anchor="middle" class="label">FitFlow Users</text>
+
+<rect class="box" x="120" y="190" width="350" height="90"/>
+<text x="295" y="225" text-anchor="middle" class="label">React Native Mobile App</text>
+<text x="295" y="252" text-anchor="middle" class="small">Android / iOS</text>
+
+<rect class="box" x="930" y="190" width="350" height="90"/>
+<text x="1105" y="225" text-anchor="middle" class="label">React Web App</text>
+<text x="1105" y="252" text-anchor="middle" class="small">Browser</text>
+
+<rect class="box" x="525" y="315" width="350" height="90"/>
+<text x="700" y="350" text-anchor="middle" class="label">Firebase Authentication</text>
+<text x="700" y="377" text-anchor="middle" class="small">Identity &amp; Sign-In</text>
+
+<rect class="box" x="525" y="445" width="350" height="95"/>
+<text x="700" y="480" text-anchor="middle" class="label">Node.js / NestJS Backend</text>
+<text x="700" y="508" text-anchor="middle" class="small">API + Business Logic + Authorization</text>
+
+<rect class="box" x="90" y="620" width="340" height="115"/>
+<text x="260" y="654" text-anchor="middle" class="label">PostgreSQL</text>
+<text x="260" y="682" text-anchor="middle" class="small">Users, Workouts, Nutrition,</text>
+<text x="260" y="706" text-anchor="middle" class="small">Subscriptions &amp; Core Records</text>
+
+<rect class="box" x="530" y="620" width="340" height="115"/>
+<text x="700" y="654" text-anchor="middle" class="label">Firebase Real-Time Layer</text>
+<text x="700" y="682" text-anchor="middle" class="small">Social Feeds, Challenges,</text>
+<text x="700" y="706" text-anchor="middle" class="small">Live Updates &amp; Notifications</text>
+
+<rect class="box" x="970" y="620" width="340" height="115"/>
+<text x="1140" y="654" text-anchor="middle" class="label">Python / FastAPI AI Service</text>
+<text x="1140" y="682" text-anchor="middle" class="small">Recommendations, Nutrition AI,</text>
+<text x="1140" y="706" text-anchor="middle" class="small">Model Inference</text>
+
+<rect class="box" x="90" y="790" width="340" height="80"/>
+<text x="260" y="824" text-anchor="middle" class="label">Redis Cache</text>
+<text x="260" y="850" text-anchor="middle" class="small">Frequently Accessed Data</text>
+
+<rect class="box" x="530" y="790" width="340" height="80"/>
+<text x="700" y="824" text-anchor="middle" class="label">Secure Object Storage</text>
+<text x="700" y="850" text-anchor="middle" class="small">Meal Images &amp; User Media</text>
+
+<rect class="box" x="970" y="790" width="340" height="80"/>
+<text x="1140" y="824" text-anchor="middle" class="label">TensorFlow Lite / ML Models</text>
+<text x="1140" y="850" text-anchor="middle" class="small">On-device + Cloud AI</text>
+
+<!-- Lines -->
+<path class="line" d="M620 140 L350 190"/>
+<path class="line" d="M780 140 L1050 190"/>
+<path class="line" d="M410 280 L590 315"/>
+<path class="line" d="M990 280 L810 315"/>
+<path class="line" d="M700 405 L700 445"/>
+<path class="line" d="M620 540 L300 620"/>
+<path class="line" d="M700 540 L700 620"/>
+<path class="line" d="M780 540 L1100 620"/>
+<path class="line" d="M260 735 L260 790"/>
+<path class="line" d="M700 735 L700 790"/>
+<path class="line" d="M1140 735 L1140 790"/>
+<path class="line" d="M875 505 C930 520, 920 780, 870 820"/>
+<path class="line" d="M970 680 C900 700, 820 760, 810 790"/>
+</svg>
